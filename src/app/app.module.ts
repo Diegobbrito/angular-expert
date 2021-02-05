@@ -19,6 +19,9 @@ import { DataBindingComponent } from "./demos/data-binding/data-binding.componen
 import { ProdutoService } from "./produtos/produtos.service";
 import { ListaProdutoComponent } from "./produtos/lista-produto/lista-produto.component";
 import { CadastroComponent } from "./demos/reactiveForms/cadastro/cadastro.component";
+import { NgBrazil } from "ng-brazil";
+import { TextMaskModule } from 'angular2-text-mask';
+import { CustomFormsModule } from "ng2-validation";
 
 @NgModule({
   declarations: [
@@ -38,6 +41,9 @@ import { CadastroComponent } from "./demos/reactiveForms/cadastro/cadastro.compo
     HttpClientModule,
     [RouterModule.forRoot(rootRouterConfig)],
     ReactiveFormsModule,
+    NgBrazil,
+    CustomFormsModule,
+    TextMaskModule,
   ],
   providers: [
     ProdutoService,
