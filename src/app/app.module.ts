@@ -25,10 +25,10 @@ import { ImageFormaterPipe } from './demos/pipes/filmes/image.pipe';
 import { BarModule } from './demos/bar-di-zones/bar.module';
 import { BarServices } from './demos/bar-di-zones/bar.service';
 import { TodoModule } from './demos/todo-list/todo.module';
+import { BarComponent } from './demos/bar-di-zones/bar.component';
 
 export const BAR_PROVIDERS: Provider[] = [
   BarServices
-  // pode adicionar outros e depois usar a coleção BAR_PROVIDERS;
 ];
 
 @NgModule({
@@ -39,7 +39,8 @@ export const BAR_PROVIDERS: Provider[] = [
     FilmesComponent,
     FilmesComponent,
     FileSizePipe,
-    ImageFormaterPipe
+    ImageFormaterPipe,
+    BarComponent
   ],
   imports: [
     BrowserModule,

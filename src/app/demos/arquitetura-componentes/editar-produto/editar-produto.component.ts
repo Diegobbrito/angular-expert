@@ -1,7 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { ActivatedRoute, Router } from "@angular/router";
 import { Produto } from "../models/produto";
-import { ProdutoService } from "../services/produto.services";
+import { ProdutoService } from "../services/produto.service";
 
 @Component({
   selector: "app-editar-produto",
