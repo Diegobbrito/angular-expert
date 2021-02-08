@@ -20,7 +20,7 @@ import { NgBrazil } from "ng-brazil";
 import { TextMaskModule } from 'angular2-text-mask';
 import { CustomFormsModule } from "ng2-validation";
 import { NavegacaoModule } from "./navegacao/navegacao.module";
-import { ProdutoDashboardComponent } from './demos/arquitetura-componentes/produto-dashboard/produto-dashboard.component';
+import { EditarProdutoComponent } from './demos/editar-produto/editar-produto.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +30,7 @@ import { ProdutoDashboardComponent } from './demos/arquitetura-componentes/produ
     DataBindingComponent,
     ListaProdutoComponent,
     CadastroComponent,
-    ProdutoDashboardComponent,
+    EditarProdutoComponent,
   ],
   imports: [
     BrowserModule,
