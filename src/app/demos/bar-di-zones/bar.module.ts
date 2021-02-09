@@ -16,12 +16,9 @@ import { BarUnidadeConfig, BAR_UNIDADE_CONFIG } from './bar.config';
     ]
 })
 export class BarModule {
-    // O nome forRoot não é obrigatório, pode usar qualquer nome;
     static forRoot(config: BarUnidadeConfig) : ModuleWithProviders {
         return {
             ngModule: BarModule,
-            // A diferença de por o providers aqui, ao invés de por no @NgModule acima,
-            // é que aqui você vai fornecer os providers conforme o método que for chamado;
             providers: [
                 { provide: 'ConfigManualUnidade', useValue: config },
                 { provide: BAR_UNIDADE_CONFIG, useValue: config }

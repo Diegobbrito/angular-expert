@@ -2,19 +2,14 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-admin-dashboard',
-  template: `
-    <p>
-      admin-dashboard works!
-    </p>
-  `,
-  styles: [
-  ]
+  templateUrl: './admin-dashboard.component.html',
+  styles: []
 })
 export class AdminDashboardComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
   }
 
 }

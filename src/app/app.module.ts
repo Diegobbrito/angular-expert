@@ -7,7 +7,6 @@ import localePt from '@angular/common/locales/pt';
 registerLocaleData(localePt);
 
 import { NgBrazil } from 'ng-brazil';
-import { TextMask } from 'ng-brazil';
 import { CustomFormsModule } from 'ng2-validation'
 
 import { AppComponent } from './app.component';
@@ -26,6 +25,8 @@ import { BarModule } from './demos/bar-di-zones/bar.module';
 import { BarServices } from './demos/bar-di-zones/bar.service';
 import { TodoModule } from './demos/todo-list/todo.module';
 import { BarComponent } from './demos/bar-di-zones/bar.component';
+import { TodoComponent } from './demos/todo-list/todo.component';
+import { TextMaskModule } from 'angular2-text-mask';
 
 export const BAR_PROVIDERS: Provider[] = [
   BarServices
@@ -40,7 +41,8 @@ export const BAR_PROVIDERS: Provider[] = [
     FilmesComponent,
     FileSizePipe,
     ImageFormaterPipe,
-    BarComponent
+    BarComponent,
+    TodoComponent
   ],
   imports: [
     BrowserModule,
@@ -48,7 +50,7 @@ export const BAR_PROVIDERS: Provider[] = [
     ReactiveFormsModule,
     NavegacaoModule,
     HttpClientModule,
-    TextMask.TextMaskModule,
+    TextMaskModule,
     NgBrazil,
     CustomFormsModule,
     AppRoutingModule,
