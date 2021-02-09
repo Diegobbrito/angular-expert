@@ -24,7 +24,6 @@ import { ImageFormaterPipe } from './demos/pipes/filmes/image.pipe';
 import { BarModule } from './demos/bar-di-zones/bar.module';
 import { BarServices } from './demos/bar-di-zones/bar.service';
 import { TodoModule } from './demos/todo-list/todo.module';
-import { BarComponent } from './demos/bar-di-zones/bar.component';
 import { TodoComponent } from './demos/todo-list/todo.component';
 import { TextMaskModule } from 'angular2-text-mask';
 
@@ -41,8 +40,6 @@ export const BAR_PROVIDERS: Provider[] = [
     FilmesComponent,
     FileSizePipe,
     ImageFormaterPipe,
-    BarComponent,
-    TodoComponent
   ],
   imports: [
     BrowserModule,
