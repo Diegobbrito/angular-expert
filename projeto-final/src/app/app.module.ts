@@ -7,6 +7,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavegacaoModule } from './navegacao/navegacao.module';
 
+import { CustomFormsModule } from 'ngx-custom-validators';
+import { FormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent
@@ -15,7 +18,9 @@ import { NavegacaoModule } from './navegacao/navegacao.module';
     BrowserModule,
     AppRoutingModule,
     NavegacaoModule,
-    NgbModule
+    NgbModule,
+    CustomFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
