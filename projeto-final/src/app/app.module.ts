@@ -1,14 +1,20 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ToastrModule } from 'ngx-toastr';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavegacaoModule } from './navegacao/navegacao.module';
 
-import { CustomFormsModule } from 'ngx-custom-validators';
-import { FormsModule } from '@angular/forms';
+// import { ErrorInterceptor } from './services/error.handler.service';
+
+// export const httpInterceptorProviders = [
+//   { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },
+// ];
 
 @NgModule({
   declarations: [
@@ -19,10 +25,13 @@ import { FormsModule } from '@angular/forms';
     AppRoutingModule,
     NavegacaoModule,
     NgbModule,
-    CustomFormsModule,
-    FormsModule
+    BrowserAnimationsModule,
+    ToastrModule.forRoot(),
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    // httpInterceptorProviders
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
