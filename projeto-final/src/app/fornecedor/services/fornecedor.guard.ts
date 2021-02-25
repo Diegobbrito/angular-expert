@@ -11,11 +11,11 @@ export class FornececedorGuard extends BaseGuard implements CanActivate, CanDeac
     canDeactivate(component: NovoComponent) {
         if(component.mudancasNaoSalvas) {
             return window.confirm('Tem certeza que deseja abandonar o preenchimento do formulario?');
-        }        
+        }
         return true
     }
 
     canActivate(routeAc: ActivatedRouteSnapshot) {
         return super.validarClaims(routeAc);
-    }  
+    }
 }
