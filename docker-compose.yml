@@ -18,3 +18,8 @@ services:
         environment:
             SA_PASSWORD: "MeuDB@123"
             ACCEPT_EULA: "Y"
+    client:
+        image: desenvolvedorio/app-spa-curso-angular:latest
+        container_name: app-spa-curso-angular
+        ports:
+            - "8080:80"
